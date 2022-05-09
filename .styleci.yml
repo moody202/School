@@ -1,0 +1,20 @@
+php:
+  preset: laravel
+  disabled:
+<<<<<<< HEAD
+    - unused_use
+  finder:
+    not-name:
+      - index.php
+      - server.php
+=======
+    - no_unused_imports
+  finder:
+    not-name:
+      - index.php
+>>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
+js:
+  finder:
+    not-name:
+      - webpack.mix.js
+css: true
