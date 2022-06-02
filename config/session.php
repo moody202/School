@@ -72,11 +72,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'connection' => env('SESSION_CONNECTION', null),
-=======
-    'connection' => env('SESSION_CONNECTION'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 
     /*
     |--------------------------------------------------------------------------
@@ -104,11 +100,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'store' => env('SESSION_STORE', null),
-=======
-    'store' => env('SESSION_STORE'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 
     /*
     |--------------------------------------------------------------------------
@@ -163,11 +155,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'domain' => env('SESSION_DOMAIN', null),
-=======
-    'domain' => env('SESSION_DOMAIN'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 
     /*
     |--------------------------------------------------------------------------
@@ -176,11 +164,7 @@ return [
     |
     | By setting this option to true, session cookies will only be sent back
     | to the server if the browser has a HTTPS connection. This will keep
-<<<<<<< HEAD
     | the cookie from being sent to you if it can not be done securely.
-=======
-    | the cookie from being sent to you when it can't be done securely.
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     |
     */
 

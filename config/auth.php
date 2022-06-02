@@ -31,24 +31,16 @@ return [
     | users are actually retrieved out of your database or other storage
     | mechanisms used by this application to persist your user's data.
     |
-<<<<<<< HEAD
     | Supported: "session", "token"
-=======
-    | Supported: "session"
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     |
     */
 
     'guards' => [
-<<<<<<< HEAD
 
-=======
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
         ],
-<<<<<<< HEAD
 
         'student' => [
             'driver' => 'session',
@@ -71,8 +63,6 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
-=======
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     ],
 
     /*
@@ -93,7 +83,6 @@ return [
     */
 
     'providers' => [
-<<<<<<< HEAD
 
         'users' => [
             'driver' => 'eloquent',
@@ -116,17 +105,6 @@ return [
         ],
 
 
-=======
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\User::class,
-        ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     ],
 
     /*
@@ -138,11 +116,7 @@ return [
     | than one user table or model in the application and you want to have
     | separate password reset settings based on the specific user types.
     |
-<<<<<<< HEAD
     | The expire time is the number of minutes that the reset token should be
-=======
-    | The expire time is the number of minutes that each reset token will be
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
     |

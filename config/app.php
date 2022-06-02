@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\Facade;
-
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 return [
 
     /*
@@ -59,11 +54,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-<<<<<<< HEAD
     'asset_url' => env('ASSET_URL', null),
-=======
-    'asset_url' => env('ASSET_URL'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 
     /*
     |--------------------------------------------------------------------------
@@ -170,11 +161,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-<<<<<<< HEAD
         Yoeunes\Toastr\ToastrServiceProvider::class,
 
-=======
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 
         /*
          * Package Service Providers...
@@ -188,10 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-<<<<<<< HEAD
         App\Providers\RepoServiceProvider::class,
-=======
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 
     ],
 
@@ -206,7 +191,6 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'aliases' => [
 
         'App' => Illuminate\Support\Facades\App::class,
@@ -247,10 +231,5 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
-=======
-    'aliases' => Facade::defaultAliases()->merge([
-        // 'ExampleClass' => App\Example\ExampleClass::class,
-    ])->toArray(),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
 
 ];

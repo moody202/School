@@ -11,11 +11,7 @@ return [
     | framework when an event needs to be broadcast. You may set this to
     | any of the connections defined in the "connections" array below.
     |
-<<<<<<< HEAD
     | Supported: "pusher", "redis", "log", "null"
-=======
-    | Supported: "pusher", "ably", "redis", "log", "null"
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     |
     */
 
@@ -43,17 +39,6 @@ return [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'useTLS' => true,
             ],
-<<<<<<< HEAD
-=======
-            'client_options' => [
-                // Guzzle client options: https://docs.guzzlephp.org/en/stable/request-options.html
-            ],
-        ],
-
-        'ably' => [
-            'driver' => 'ably',
-            'key' => env('ABLY_KEY'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         ],
 
         'redis' => [

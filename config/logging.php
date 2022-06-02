@@ -21,22 +21,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-<<<<<<< HEAD
-=======
-    | Deprecations Log Channel
-    |--------------------------------------------------------------------------
-    |
-    | This option controls the log channel that should be used to log warnings
-    | regarding deprecated PHP and library features. This allows you to get
-    | your application ready for upcoming major versions of dependencies.
-    |
-    */
-
-    'deprecations' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
-
-    /*
-    |--------------------------------------------------------------------------
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     | Log Channels
     |--------------------------------------------------------------------------
     |
@@ -60,21 +44,13 @@ return [
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
-<<<<<<< HEAD
             'level' => 'debug',
-=======
-            'level' => env('LOG_LEVEL', 'debug'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         ],
 
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
-<<<<<<< HEAD
             'level' => 'debug',
-=======
-            'level' => env('LOG_LEVEL', 'debug'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
             'days' => 14,
         ],
 
@@ -83,38 +59,21 @@ return [
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
-<<<<<<< HEAD
             'level' => 'critical',
-=======
-            'level' => env('LOG_LEVEL', 'critical'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         ],
 
         'papertrail' => [
             'driver' => 'monolog',
-<<<<<<< HEAD
             'level' => 'debug',
             'handler' => SyslogUdpHandler::class,
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
                 'port' => env('PAPERTRAIL_PORT'),
-=======
-            'level' => env('LOG_LEVEL', 'debug'),
-            'handler' => env('LOG_PAPERTRAIL_HANDLER', SyslogUdpHandler::class),
-            'handler_with' => [
-                'host' => env('PAPERTRAIL_URL'),
-                'port' => env('PAPERTRAIL_PORT'),
-                'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
             ],
         ],
 
         'stderr' => [
             'driver' => 'monolog',
-<<<<<<< HEAD
-=======
-            'level' => env('LOG_LEVEL', 'debug'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
             'handler' => StreamHandler::class,
             'formatter' => env('LOG_STDERR_FORMATTER'),
             'with' => [
@@ -124,20 +83,12 @@ return [
 
         'syslog' => [
             'driver' => 'syslog',
-<<<<<<< HEAD
             'level' => 'debug',
-=======
-            'level' => env('LOG_LEVEL', 'debug'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         ],
 
         'errorlog' => [
             'driver' => 'errorlog',
-<<<<<<< HEAD
             'level' => 'debug',
-=======
-            'level' => env('LOG_LEVEL', 'debug'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         ],
 
         'null' => [

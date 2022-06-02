@@ -29,11 +29,7 @@ return [
     | mailers below. You are free to add additional mailers as required.
     |
     | Supported: "smtp", "sendmail", "mailgun", "ses",
-<<<<<<< HEAD
     |            "postmark", "log", "array"
-=======
-    |            "postmark", "log", "array", "failover"
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     |
     */
 
@@ -46,10 +42,7 @@ return [
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
-<<<<<<< HEAD
             'auth_mode' => null,
-=======
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         ],
 
         'ses' => [
@@ -66,11 +59,7 @@ return [
 
         'sendmail' => [
             'transport' => 'sendmail',
-<<<<<<< HEAD
             'path' => '/usr/sbin/sendmail -bs',
-=======
-            'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
         ],
 
         'log' => [
@@ -81,17 +70,6 @@ return [
         'array' => [
             'transport' => 'array',
         ],
-<<<<<<< HEAD
-=======
-
-        'failover' => [
-            'transport' => 'failover',
-            'mailers' => [
-                'smtp',
-                'log',
-            ],
-        ],
->>>>>>> 17ede32943ad6eadf9d7dc698ac5e73d6c1a7730
     ],
 
     /*
